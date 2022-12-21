@@ -72,4 +72,6 @@ Some suggestions below might be good points to improve the value of this project
 - Component testing using Testcontainers
 - Rest API tesing
 - JUnit service test does should reach over 80% coverage
+- Using proper RDMS Database like MySQL, Postgres...
+- Handle concurrent database update by using Pessimistic or Optimistic Locking
 ```
