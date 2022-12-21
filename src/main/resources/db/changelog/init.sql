@@ -1,0 +1,4 @@
+INSERT INTO voucher(voucher_id, description, quantity, status, voucher_name, voucher_type) VALUES ('0e751a4e-0ff1-4379-b850-f4b57d5c9591', 'some_description', 1, 0, 'voucher1', 0);
+INSERT INTO voucher(voucher_id, description, quantity, status, voucher_name, voucher_type) VALUES ('296a662c-e1b0-427f-9e46-7953cea7c3c7', 'some_description', 1, 0, 'voucher2', 1);
+INSERT INTO voucher(voucher_id, description, quantity, status, voucher_name, voucher_type) VALUES ('eb820a89-2022-49fd-8a97-616b54d32d77', 'some_description', 3, 0, 'voucher3', 2);
+INSERT INTO voucher(voucher_id, description, quantity, status, voucher_name, voucher_type, expiry_date) VALUES ('52301a25-2dde-498a-a9ae-1df1f0172422', 'some_description', 1, 0, 'voucher4', 3, '2023-12-20T12:53:06.985');

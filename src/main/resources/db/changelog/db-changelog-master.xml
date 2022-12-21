@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+    <changeSet id="init-table" author="tu.le">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="voucher"/>
+            </not>
+        </preConditions>
+        <createTable tableName="voucher">
+            <column name="voucher_id" type="VARCHAR(50)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="voucher_name" type="VARCHAR(50)"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="quantity" type="Integer"/>
+            <column name="status" type="Integer"/>
+            <column name="voucher_type" type="Integer"/>
+            <column name="expiry_date" type="timestamp"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="init-data" author="tu.le">
+        <sqlFile path="db/changelog/init.sql"></sqlFile>
+    </changeSet>
+</databaseChangeLog>
